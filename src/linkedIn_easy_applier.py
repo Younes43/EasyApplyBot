@@ -515,12 +515,34 @@ class LinkedInEasyApplier:
                 logger.debug(f"Generated file path for cover letter: {file_path_pdf}")
 
                 c = canvas.Canvas(file_path_pdf, pagesize=letter)
-                _, height = letter
-                text_object = c.beginText(100, height - 100)
+                page_width, page_height = letter
+
+                # Define margins and text area
+                margin = 100
+                text_width = page_width - 2 * margin
+
+                # Configure text object
+                text_object = c.beginText(margin, page_height - margin)
                 text_object.setFont("Helvetica", 12)
-                text_object.textLines(cover_letter_text)
+
+                # Wrap and draw text
+                words = cover_letter_text.replace('\n', ' ').split()
+                line = []
+                for word in words:
+                    test_line = ' '.join(line + [word])
+                    if c.stringWidth(test_line, text_object._fontname, text_object._fontsize) < text_width:
+                        line.append(word)
+                    else:
+                        text_object.textLine(' '.join(line))
+                        line = [word]
+
+                # Add any remaining words
+                if line:
+                    text_object.textLine(' '.join(line))
+
                 c.drawText(text_object)
                 c.save()
+
                 logger.debug(f"Cover letter successfully generated and saved to: {file_path_pdf}")
 
                 break
