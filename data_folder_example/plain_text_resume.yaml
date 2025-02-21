@@ -1,0 +1,91 @@
+personal_information:
+  name: "solid"
+  surname: "snake"
+  date_of_birth: "12/01/1861"
+  country: "Ireland"
+  city: "Dublin"
+  location: "Atlanta"
+  zip: "520123"
+  address: "12 Fox road"
+  phone_prefix: "+1"
+  phone: "7819117091"
+  email: "hi@gmail.com"
+  github: "https://github.com/lol"
+  linkedin: "https://www.linkedin.com/in/thezucc/"
+
+education_details:
+  - degree: "Masters"
+    university: "Institute"
+    gpa: "3.0"
+    graduation_year: "2023"
+    field_of_study: "Computer Science"
+  - degree: "Bachelor"
+    university: "School"
+    gpa: "3.8"
+    graduation_year: "2022"
+    field_of_study: "Computer Science"
+
+experience_details:
+  - position: ""
+    company: ""
+    employment_period: ""
+    location: ""
+    key_responsibilities:
+      - responsibility_1: ""
+      - responsibility_2: ""
+      - responsibility_3: ""
+    skills_acquired:
+      - "C++"
+      - "Python"
+      - "JavaScript"
+      - "FastAPI"
+      - "Docker"
+      - "AWS Cloud"
+
+  - position: ""
+    company: ""
+    employment_period: ""
+    location: ""
+    key_responsibilities:
+      - responsibility_1: ""
+      - responsibility_2: ""
+      - responsibility_3: ""
+    skills_acquired:
+      - "Python"
+      - "Sklearn"
+
+projects:
+  - name: ""
+    description: ""
+
+availability:
+  notice_period: "immediatly"
+
+salary_expectations:
+  salary_range_usd: ""
+
+self_identification:
+  gender: "Male"
+  pronouns: "He/Him"
+  veteran: "Not a Veteran"
+  disability: "Not Disabled"
+  ethnicity: "White"
+
+legal_authorization:
+  eu_work_authorization: "Yes"
+  us_work_authorization: "Yes"
+  requires_us_visa: "No"
+  requires_us_sponsorship: "No"
+  requires_eu_visa: "No"
+  legally_allowed_to_work_in_eu: "Yes"
+  legally_allowed_to_work_in_us: "Yes"
+  requires_eu_sponsorship: "No"
+  us_citizen: "No"
+
+work_preferences:
+  remote_work: "Yes"
+  in_person_work: "Yes"
+  open_to_relocation: "Yes"
+  willing_to_complete_assessments: "Yes"
+  willing_to_undergo_drug_tests: "Yes"
+  willing_to_undergo_background_checks: "Yes"

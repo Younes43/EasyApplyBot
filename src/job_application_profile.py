@@ -24,6 +24,7 @@ class LegalAuthorization:
     requires_eu_visa: str
     legally_allowed_to_work_in_eu: str
     requires_eu_sponsorship: str
+    us_citizen: str
 
 
 @dataclass
